@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#F8F8F8 ;
+   
+}
+#nav-bar{
+    background-color:#F8F8F8 ;
+   height: 8.4vh;
+   width: 100vw;
+   display: flex;
+   
+}
+#nav-logo{
+    font-family: 'Raleway', sans-serif;
+  
+    float: left;
+    margin: 0.8% 2%;
+    width: 90%;
+}
+#nav-logo a{
+    color: inherit;
+    text-decoration: none;;
+}
+#nav-logo a:visited{
+    color: inherit;
+}
+
+#div1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+}
+.container{
+    display:flex;
+    width:60%;
+    height:70vh;
+    background-color:white;
+    border-radius:20px;
+}
+
+.details,.image{
+    width:50%;
+    height:100%;
+}
+
+.heading{
+    width:85%;
+    height:10vh;
+    
+}
+
+.margin-top-17{
+    margin-top:17%;
+}
+
+.margin-left-20{
+    margin-left:10%;
+}
+
+.inputs{ 
+    width:75%;
+    height:50%;
+}
+
+.in{
+    outline:none;
+}
+
+input{
+    border-bottom:1px solid rgb(184, 181, 181);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    width:80%;
+    margin-bottom:23px;
+}
+
+.name{
+    margin:10px 15px 40px 0px;
+}
+
+.sign-in-link a{
+    color:black;
+    text-decoration:underline black;
+    float:right;
+    margin-top:12%;
+}
+
+.btn{
+    margin-top:20%;
+}
+.btn input{
+    background-color: black;
+    color:white;
+    width:100px;
+    height:35px;
+    border-radius:10px;
+}
+
+
+.image{
+   background-image: url("/IMG/signin-image.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+}

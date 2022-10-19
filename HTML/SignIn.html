@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/SignIn.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div id="nav-bar">
+      <div id="nav-logo">
+        <h1><a href="Main.html">E-BUY</a></h1>
+      </div>
+    </div>
+    <div id="div1">
+      <div class="container">
+        <div class="image"></div>
+        <div class="details">
+          <div class="heading margin-left-20 margin-top-17">
+            <h1>Sign In</h1>
+          </div>
+          <div class="inputs margin-left-20">
+            <form name="form1" action="#" onSubmit="return validate()">
+              <div class="name">
+                <i class="fa-solid fa-user"></i>&emsp;<input
+                  type="text"
+                  class="in"
+                  id="name"
+                  placeholder="UserName"
+                />
+              </div>
+
+              <div class="name">
+                <i class="fa-solid fa-lock"></i>&emsp;<input
+                  class="in"
+                  type="password"
+                  placeholder="Password"
+                  id="pass"
+                />
+              </div>
+              <div class="sign-in-link">
+                <a href="SIgnUp.html">Create an Account</a>
+              </div>
+
+              <div class="btn">
+                <input type="submit" value="Log in" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function validate() {
+        var Username = document.form1.name.value;
+        var Password = document.form1.pass.value;
+        if (Username == "mohitxmalik" && Password == "admin") {
+          swal("Success", "Logged in Successfully", "success").then(
+            function () {
+              window.location = "Main.html";
+            }
+          );
+        } else if (Username == "" || Password == "") {
+          swal("Oops!", "Please enter username & password", "info");
+        } else if (
+          document.form1.name.value != "mohitxmalik" ||
+          document.form1.pass.value != "admin"
+        ) {
+          swal("Oops!", "Wrong Username or Password", "error");
+        }
+      }
+    </script>
+  </body>
+</html>

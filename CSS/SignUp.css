@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#F8F8F8 ;
+  
+    
+}
+#nav-bar{
+    background-color:#F8F8F8 ;
+   height: 8.4vh;
+   width: 100vw;
+   display: flex;
+   
+}
+#nav-logo{
+    font-family: 'Raleway', sans-serif;
+  
+    float: left;
+    margin: 0.8% 2%;
+    width: 90%;
+}
+#nav-logo a{
+    color: inherit;
+    text-decoration: none;;
+}
+#nav-logo a:visited{
+    color: inherit;
+}
+.icon{
+    margin:3.5% 1% 0 5%;
+    min-width: 30px;
+}
+
+#nav-icons{
+    display: flex;
+    float: right;
+    right:10px;
+  
+
+    margin: 1.8% 0.1%;
+
+}
+#nav-icons i{
+
+padding: 0 20px 0 20px;
+   
+}
+#nav-icons i:hover{
+    /* box-shadow: 0px 0px 35px 2px rgba(12,56,209,0.8); */
+border-radius: 100%;
+filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+transform: scale(1.5);	
+}
+#div1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+
+}
+
+.container{
+    display:flex;
+    width:60%;
+    height:70vh;
+    background-color:white;
+    border-radius:20px;
+  
+}
+
+.details,.image{
+    width:50%;
+    height:100%;
+}
+
+.heading{
+    width:85%;
+    height:10vh;
+    
+}
+
+.margin-top-17{
+    margin-top:17%;
+}
+
+.margin-left-20{
+    margin-left:20%;
+}
+
+.inputs{ 
+    width:85%;
+    height:70%;
+    
+}
+
+.in{
+    outline:none;
+}
+
+input{
+    border-bottom:1px solid rgb(184, 181, 181);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    width:80%;
+}
+
+.name{
+    margin:10px 15px 40px 0px;
+}
+
+.sign-in-link a{
+    color:black;
+    text-decoration:underline black;
+    float:right;
+}
+
+.btn{
+    margin-top:25px;
+}
+.btn input{
+    background-color: black;
+    color:white;
+    width:100px;
+    height:35px;
+    border-radius:10px;
+}
+
+
+.image{
+    background-image: url("/IMG/signup-image.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+}

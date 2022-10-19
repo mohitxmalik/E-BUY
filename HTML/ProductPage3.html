@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/ProductPage3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="nav-bar">
+      <div id="nav-logo">
+        <h1><a href="Main.html">E-BUY</a></h1>
+      </div>
+      <div id="nav-input">
+        <input placeholder=" What are you looking for ?" />
+
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+      </div>
+      <div id="nav-icons">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </div>
+    <!-- <div id="banner"></div> -->
+    <hr />
+    <!-- Section 1 -->
+    <div id="container">
+      <div id="product-img">
+        <img id="img1" src="/IMG/Airpods/a1.jpg" alt="" onclick="img1()" />
+        <img id="img2" src="/IMG/Airpods/a2.jpg" alt="" onclick="img2()" />
+        <img id="img3" src="/IMG/Airpods/a3.jpg" alt="" onclick="img3()" />
+      </div>
+      <div id="main-img">
+        <img id="main-img1" src="/IMG/Airpods/a4.jpg" alt="" />
+      </div>
+      <div id="product-info">
+        <h1 id="product-heading">AirPods Pro</h1>
+        <span> Designed by Apple </span>
+        <br />
+        <span>Active Noise Cancellation</span><br />
+        <span>More customisable fit and seal</span><br />
+        <span
+          >Transparency mode
+
+          <br
+        /></span>
+        <span> Spatial audio with dynamic head tracking </span><br />
+        <span> Amazing sound quality with Adaptive EQ</span><br />
+        <span> Easy setup for all your Apple devices </span><br />
+        <span> Sweat and water resistant (IPX4) </span><br />
+
+        <hr />
+        <!-- <h2 id="h2">Color</h2>
+
+        <button id="color1" class="color" onclick="starlight()"></button>
+        <button id="color2" class="color" onclick="midnight()"></button>
+        <button id="color3" class="color" onclick="spacegrey()"></button> -->
+        <div id="addButton">
+          <button id="AddToCart" onclick="Add()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT--->
+    <script>
+      function starlight() {
+        document.getElementById("main-img1").src = "/IMG/starlight/s4.jpg";
+        document.getElementById("img1").src = "/IMG/starlight/s1.jpg";
+        document.getElementById("img2").src = "/IMG/starlight/s2.jpg";
+        document.getElementById("img3").src = "/IMG/starlight/s3.jpg";
+        document.getElementById("product-heading").innerHTML =
+          "MacBook Air - Starlight";
+      }
+      function midnight() {
+        document.getElementById("main-img1").src = "/IMG/midnight/p4.jpg";
+        document.getElementById("img1").src = "/IMG/midnight/p1.jpg";
+        document.getElementById("img2").src = "/IMG/midnight/p2.jpg";
+        document.getElementById("img3").src = "/IMG/midnight/p3.jpg";
+        document.getElementById("product-heading").innerHTML =
+          "MacBook Air - Midnight";
+      }
+      function spacegrey() {
+        document.getElementById("main-img1").src = "/IMG/spacegrey/sg4.jpg";
+        document.getElementById("img1").src = "/IMG/spacegrey/sg1.jpg";
+        document.getElementById("img2").src = "/IMG/spacegrey/sg2.jpg";
+        document.getElementById("img3").src = "/IMG/spacegrey/sg3.jpg";
+        document.getElementById("product-heading").innerHTML =
+          "MacBook Air - Space Gray";
+      }
+      function img1() {
+        let mainimg = document.getElementById("main-img1").src;
+        document.getElementById("main-img1").src =
+          document.getElementById("img1").src;
+        document.getElementById("img1").src = mainimg;
+      }
+      function img2() {
+        let mainimg = document.getElementById("main-img1").src;
+        document.getElementById("main-img1").src =
+          document.getElementById("img2").src;
+
+        document.getElementById("img2").src = mainimg;
+      }
+      function img3() {
+        let mainimg = document.getElementById("main-img1").src;
+        document.getElementById("main-img1").src =
+          document.getElementById("img3").src;
+        document.getElementById("img3").src = mainimg;
+      }
+      function Add() {
+        Swal.fire("Finally!", "Added to cart!", "success");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/ContactForm.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"> </script>
+  </head>
+  <body>
+     <!-- NAVBAR -->
+     <div id="nav-bar">
+        <div id="nav-logo">
+          <h1><a href="Main.html">E-BUY</a></h1>
+        </div>
+        <!-- <div id="nav-input">
+          <input placeholder=" What are you looking for ?" />
+  
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+        </div> -->
+        <div id="nav-icons">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+      <!-- Bodyyy -->
+    <div class="body">
+      <div class="container">
+        <div class="first-half">
+          <div class="heading">
+            <h1>Contact Us</h1>
+            <p>We're open to any suggestion or just to have a chat.</p>
+          </div>
+          <div class="details">
+            <div class="email">
+              <p class="grey-text">EMAIL:</p>
+              <p>info@ebuy.com</p>
+            </div>
+            <div class="phone">
+              <p class="grey-text">PHONE:</p>
+              <p>+ 1235 2355 98</p>
+            </div>
+          </div>
+          <div class="inputs">
+            <form name="form1" action="#" onSubmit="return valid()">
+              <input
+                type="text"
+                class="in"
+                
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                class="in"
+                
+                placeholder="Email"
+              />
+              <input
+                type="text"
+                class="in"
+                
+                placeholder="Subject"
+              />
+              <textarea
+                placeholder="Create a message here"
+                cols="53"
+                rows="8"
+                id="textarea"></textarea>
+          </div>
+          <div class="button">
+            <input type="submit" value="Send Message" />
+          </form>
+          </div>
+        </div>
+        <div class="second-half"></div>
+      </div>
+    </div>
+
+    <script>
+      // swal('Oops!','Please enter atleast 10 characters','error');
+      function redirect(){
+        document.form1.action="h1.php";
+      }
+      function valid() {
+        if (document.form1.textarea.value.length<10) {
+          swal('Oops!','Please enter atleast 10 characters','error');
+        }
+        else{
+          swal({
+    title: "Thank You",
+    text: "For your feedback",
+    type: "success"
+}).then(function() {
+    window.location = "Main.html";
+});
+        }
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/Main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>E-BUY</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="nav-bar">
+      <div id="nav-logo">
+        <h1><a href="Main.html">E-BUY</a></h1>
+      </div>
+      <div id="nav-input">
+        <input placeholder=" What are you looking for ?" />
+
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+      </div>
+      <div id="nav-icons">
+        <a href="SignIn.html"> <i class="fa-solid fa-user"></i></a>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </div>
+    <!-- HEADER -->
+    <div id="header">
+      <div class="dropdown">
+        <button class="dropbtn">
+          Mobiles
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Apple</a>
+          <a href="#">Samsung</a>
+          <a href="#">Oneplus</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Televisions
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Sony</a>
+          <a href="#">Samsung</a>
+          <a href="#">Mi</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Laptops
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Dell</a>
+          <a href="#">HP</a>
+          <a href="#">Lenovo</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Air Conditioners
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hitachi</a>
+          <a href="#">Daikin</a>
+          <a href="#">Samsung</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Wearables
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Fitness Band</a>
+          <a href="#">SmartWatches</a>
+        </div>
+      </div>
+    </div>
+    <!-- Section  -->
+
+    <div id="slider">
+      <ul id="slideWrap">
+        <li><img src="../IMG/carousel1.jpg" alt="" /></li>
+        <li><img src="../IMG/carousel2.jpg" alt="" /></li>
+        <li><img src="../IMG/carousel3.jpg" alt="" /></li>
+      </ul>
+      <a id="prev" href="#">&#8810;</a>
+      <a id="next" href="#">&#8811;</a>
+    </div>
+
+    <div id="section1">
+      <div class="margin-lr">
+        <div class="heading"><h1>Popular products</h1></div>
+        <div class="divs">
+          <div class="div1">
+            <a href="ProductPage3.html">
+            <img class="product-img" src="../IMG/product1.jpg " />
+            <h3>
+              Apple AirPods Pro MLWK3HN/A<br />
+              In-Ear Active Noise Cancellation
+            </h3>
+            <span>₹19,940.00 &emsp;&emsp; <del>₹22,999.00</del></span>
+          </a>
+          </div>
+
+          <div class="div1">
+            <a href="ProductPage2.html">
+            <img class="product-img" src="../IMG/product2.jpg " />
+            <h3>
+              Apple iPhone 12 <br />
+              (64GB, Blue)
+            </h3>
+
+            <span>₹60,999.00 &emsp;&emsp; <del>₹71,000.00</del></span>
+          </a> </div>
+          <div class="div1">
+            <a href="ProductPage.html">
+              <img class="product-img" src="../IMG/product3.jpg " />
+              <h3>
+                Apple MacBook Pro 14 M1 Pro chip
+                <br />macOS Monterey Laptop (16GB RAM, 512GB SSD, Apple M1 GPU,
+                35.97 cm, Space Grey)
+              </h3>
+              <span>₹1,72,450.00 &emsp;&emsp; <del>₹1,89,999.00</del></span>
+            </a>
+          </div>
+          <div class="div1">
+            <img class="product-img" src="../IMG/product4.jpg " />
+            <h3>
+              Acer Frameless 108 cm (43 inch)<br />
+              Ultra HD (4K) LED
+            </h3>
+            <span>₹53,500.00 &emsp;&emsp; <del>₹57,999.00</del></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER   -->
+    <div id="banner">
+      <h1 data-aos="fade-down">Shop Safely with E-BUY</h1>
+      <img src="../IMG/banner1.jpg " data-aos="fade-up" />
+    </div>
+
+    <!-- Moving -->
+    <div id="section-2 " class="margin-lr">
+      <br />
+      <h1 class="heading">Top Categories</h1>
+      <div class="container" data-aos="fade-up">
+        <div class="carousel">
+          <div class="carousel__face">
+            <img src="../IMG/top-categories1.jpg" />
+            <h3>Home Appliances</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories2.jpg" />
+            <h3>Computers & Tablets</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories3.jpg" />
+            <h3>Kitchen Appliances</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories4.jpg" />
+            <h3>Phones & Wearables</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories5.jpg" />
+            <h3>Televisions</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories6.jpg" />
+            <h3>Smart Devices</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories7.jpg" />
+            <h3>Gaming</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories8.jpg" />
+            <h3>Personal Care</h3>
+          </div>
+          <div class="carousel__face">
+            <img src="../IMG/top-categories9.jpg" />
+            <h3>Camera & Accesories</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Div class="foot">
+      <footer >
+        eBuy is India's first large format specialist electronics retail store.
+        Founded in 2006 eBuy brings under one roof, multi-brand digital gadgets
+        and home electronics products. From large appliances such as Air
+        Conditioners, Refrigerators, and Televisions to handy devices such as
+        Laptops, Mobile Phones , and Cameras,eBuy stocks over 22,000 products
+        from over 500 brands in more than 248 stores across 80+ major cities.
+       eBuy brings alive the promise of a ‘Brighter Every Day’ with a
+        world-class ambience to shop both in-store and online on eBuy.com while
+        also creating a seamless omnichannel shopping experience that lets you
+        enjoy the best of both, online and offline worlds. You’ll always be spoilt
+        for choice at eBuy but will never be left confused. Experts at our stores
+        will help you find the right appliance or gadget for your needs. Simply
+        #AskCromaExperts or find the right electronics and appliances by yourself
+        online with these eBuy buying guides for everything from gaming consoles,
+        microwaves, desktops, air coolers, smart home devices, and more. Whether
+        you’re setting up a new home or looking to upgrade, our range of
+        appliances from Samsung, LG, Whirlpool, Godrej, and IFB among others will
+        ensure you go home with the best appliance from the best brands. Croma’s
+        own-label products – ACs, Refrigerators, Televisions, Washing Machines,
+        and other kitchen appliances – aren’t just among the best in their
+        respective categories, they’re also competitively priced. Be productive at
+        work with our range of Windows and Chromebook laptops from HP, Dell, and
+        Lenovo among others, as well as MacBook machines from Apple. Or carry your
+        entertainment in your bag with iPad and Surface or Android tablets from
+        Lenovo, Samsung, and others.
+      </footer>
+  </Div>
+    <div class="footer">
+      <Div class="con1">
+        <a href="ContactForm.html"> <h4><b>CONNECT WITH US</b></h4></h1></a>
+        <br/>
+        
+        <p>© Copyright 2021 eBuy. All rights reserved</p>
+      </Div>
+      <Div class="con2">
+        <p><b>USEFUL LINKS</b> </p>
+        <a href="contact.html">
+        <P>Help and Support</P></a>
+        <p>FAQs</p>
+        <p>Buying Guide</p>
+        <p>Return Policy</p>
+        <p>Bulk Enquiry</p>
+        <p>Store Locator</p>
+      </Div>
+      <div class="con3"><p><b>PRODUCTS</b></p><P>Televisions and Accesssories</P><p>Home Appliances</p><p>Phones & Wearables</p><p>Computer & Tablets</p><p>Kitchen Appliances</p><p>Audio & Video</p></div>
+    </div>
+
+    <script>
+      var responsiveSlider = function () {
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+
+        window.addEventListener("resize", function () {
+          sliderWidth = slider.offsetWidth;
+        });
+
+        var prevSlide = function () {
+          if (count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          } else if ((count = 1)) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+
+        var nextSlide = function () {
+          if (count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          } else if ((count = items)) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+
+        next.addEventListener("click", function () {
+          nextSlide();
+        });
+
+        prev.addEventListener("click", function () {
+          prevSlide();
+        });
+
+        // setInterval(function () {
+        //   nextSlide();
+        // }, 11000);
+      };
+
+      window.onload = function () {
+        responsiveSlider();
+      };
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+  </body>
+</html>

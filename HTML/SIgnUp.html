@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create your account</title>
+    <link rel="stylesheet" href="/CSS/SignUp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div id="nav-bar">
+      <div id="nav-logo">
+        <h1><a href="Main.html">E-BUY</a></h1>
+      </div>
+    </div>
+    <div id="div1">
+      <div class="container">
+        <div class="details">
+          <div class="heading margin-left-20 margin-top-17">
+            <h1>Sign Up</h1>
+          </div>
+          <div class="inputs margin-left-20">
+            <form name="form1" action="#" onSubmit="return validate()">
+              <div class="name">
+                <i class="fa-solid fa-user"></i>&emsp;<input
+                  class="in"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="name">
+                <i class="fa-solid fa-envelope"></i>&emsp;<input
+                  class="in"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="name">
+                <i class="fa-solid fa-key"></i>&emsp;<input
+                  type="password"
+                  class="in"
+                  placeholder="Password"
+                  id="pass"
+                />
+              </div>
+              <div class="name">
+                <i class="fa-solid fa-lock"></i>&emsp;<input
+                  class="in"
+                  type="password"
+                  placeholder="Repeat Your Password"
+                  id="repeatpass"
+                />
+              </div>
+              <div class="sign-in-link">
+                <a href="SignIn.html">I am already member</a>
+              </div>
+
+              <div class="btn">
+                <input type="submit" value="Register" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="image"></div>
+      </div>
+    </div>
+
+    <script>
+      function validate() {
+        if (document.form1.pass.value != document.form1.repeatpass.value) {
+          swal("Oops!", "Wrong Password", "error");
+        }
+      }
+    </script>
+  </body>
+</html>
